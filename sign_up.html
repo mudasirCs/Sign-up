@@ -21,7 +21,96 @@
       </div>
 
       <div class="page_form">
-        <form class="project_from"></form>
+        <form class="project_form">
+          <p class="intro">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            now to get started
+          </p>
+          <p class="subtext">you <em>know</em> you want to.</p>
+          <div class="form_body">
+            <legend>Let's do this!</legend>
+            <div class="form_row">
+              <div>
+                <label for="first_name">First Name</label
+                ><input
+                  type="text"
+                  id="first_name"
+                  name="username"
+                  placeholder="Dustin"
+                  pattern="[a-zA-Z]+"
+                  required="required"
+                />
+              </div>
+              <div>
+                <label for="last_name">Last Name</label
+                ><input
+                  type="text"
+                  id="last_name"
+                  name="username"
+                  placeholder="Rhys"
+                  pattern="[a-zA-Z]+"
+                  required="required"
+                />
+              </div>
+            </div>
+            <div class="form_row">
+              <div>
+                <label for="email">Email</label
+                ><input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="dustinRys@gmail.com"
+                  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9\.-]+\.[a-zA-Z]{2,}"
+                  required="required"
+                />
+              </div>
+              <div>
+                <label for="phone">Phone Number</label
+                ><input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="123-445 4785"
+                  pattern="([0-9]{10})|([0-9]{3}[ -.][0-9]{3}[ -.][0-9]{4})"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form_row">
+              <div>
+                <label for="password">Password</label
+                ><input
+                  type="password"
+                  id="password"
+                  minlength="8"
+                  maxlength="20"
+                  pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}"
+                  placeholder="********"
+                  name="password"
+                  required
+                />
+                <span class="password_matches"></span>
+              </div>
+              <div>
+                <label for="confirm_password">Confirm Password</label
+                ><input
+                  type="password"
+                  id="confirm_password"
+                  minlength="8"
+                  maxlength="20"
+                  pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}"
+                  placeholder="********"
+                  name="confirm_password"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <button class="submit">Create Account</button>
+          <p class="backup_text">Already have an account? <a>Log in</a></p>
+        </form>
       </div>
     </div>
   </body>
